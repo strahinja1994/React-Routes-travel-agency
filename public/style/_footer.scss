@@ -1,0 +1,144 @@
+.footer{
+    width: 100%;
+    color: $primaryColor;
+    background-color: $secondaryColor;
+}
+
+.footer__link{
+    text-decoration: none;
+    color: $primaryColor;
+    cursor: pointer;
+    padding-left: 20px;
+    font-size: 20px;
+    font-family: mediumPoppins;
+}
+
+.footer__link:hover{
+    color: $thirdColor;
+}
+
+.footer__headline{
+    margin-bottom: 20px;
+}
+
+.footer__headline-title, .footer__headline-text{
+    text-align: center;
+    padding: 10px;
+}
+
+.footer__headline-title{
+    font-size: 40px;
+    font-family: boldPoppins;
+}
+
+.footer__headline-text{
+    font-size: 30px;
+    font-family: mediumPoppins;
+}
+
+.footer__headline-form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    input{
+        padding: 5px;
+        font-size: 15px;
+    }
+
+    button{
+        padding: 6px 40px;
+        color: $primaryColor;
+        border-radius: 5px;
+        border: 1px solid $primaryColor;
+        background: transparent;
+        cursor: pointer;
+        font-size: 15px;
+    }
+
+    button:hover{
+        background-color: $primaryColor;
+        color: $secondaryColor;
+    }
+}
+
+.footer__sections{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.footer__sections-section--title{ 
+    font-size: 30px;
+    padding: 10px 30px 15px 30px;
+    font-family: boldPoppins;
+}
+
+.footer__sections-section--list{
+    list-style: none;
+
+    li{
+        padding: 0px 10px 10px 10px;
+    }
+}
+
+
+@media screen and(min-width:501px) and (max-width: 800px) {
+
+    .footer__link{
+        padding-left:0;
+    }
+
+    .footer__sections{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__sections-section{
+        width: calc(50% - 5px);
+    }
+
+    .footer__sections-section--title,.footer__sections-section--list{
+        text-align: center;
+    }
+}
+
+@media  screen and (max-width:500px){
+
+    .footer__headline-title{
+        font-size: 30px;
+    }
+
+    .footer__headline-text{
+        font-size: 20px;
+    }
+
+    .footer__headline-form{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer__sections{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .footer__sections-section{
+        width: calc(50% - 5px);
+        text-align: center;
+    }
+
+    .footer__sections-section--title{
+        font-size: 20px;
+    }
+
+    .footer__link{
+        padding-left:0;
+        padding-right: 0;
+        font-size: 15px;
+    }
+}
+
+

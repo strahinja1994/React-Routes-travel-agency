@@ -1,0 +1,35 @@
+body{
+    position: relative;
+}
+
+.products{
+    background-image: url(../images/mountains.jpg);
+}
+
+.services{
+    background-image: url(../images/airplane.jpg);
+}
+
+.signup{
+    background-image: url(../images/desert.jpg);
+}
+
+.products, .services, .signup{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top:0;
+    left:0;
+    z-index: -1;
+}
+
+.products__title, .services__title, .signup__title{
+    font-size: 75px;
+    color: $primaryColor;
+}

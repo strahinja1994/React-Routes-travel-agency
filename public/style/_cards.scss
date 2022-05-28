@@ -1,0 +1,78 @@
+.cards__container{
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.cards{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap:30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards__title{
+    text-align: center;
+    color: $secondaryColor;
+    padding: 20px;
+    font-family: boldPoppins;
+}
+
+.card{
+    border-radius: 10px;
+    background-color:#c9c7c7 ;
+}
+
+.card__link{
+    text-decoration: none;
+}
+
+.waterfall, .island{
+    width: 46%;
+}
+
+.card__figure{
+    width: 100%;
+    position: relative;
+}
+
+.card__figure-img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.card__figure-info{
+    position: absolute;
+    left: 20px;
+    bottom: 4px;
+    background-color: $thirdColor;
+    padding: 10px;
+
+    p{
+        color: $primaryColor;
+    }
+}
+
+.ocean, .desert, .football{
+    width: 30%;
+}
+
+.card__about-text{
+    color: $secondaryColor;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+}
+
+@media screen and (max-width:800px){
+    .ocean, .desert, .football, .waterfall, .island{
+        width: 90%;
+    }
+
+    .card__figure-info{
+        padding: 5px;
+    }
+}
