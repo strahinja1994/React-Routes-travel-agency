@@ -20,7 +20,7 @@ export default function Navbar(){
                 </div>
                 <ul className={click ? 'navbar__items-active' : 'navbar__items'}>
                     <li className='navbar__items-item'>
-                        <Link onClick={closeMobileMenu} to='' className='navbar__items-link'>Home</Link>
+                        <Link onClick={closeMobileMenu} to='/' className='navbar__items-link'>Home</Link>
                     </li>
                     <li className='navbar__items-item'>
                         <Link onClick={closeMobileMenu} to='/services' className='navbar__items-link'>Services</Link>
